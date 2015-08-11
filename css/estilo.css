@@ -1,0 +1,1456 @@
+@charset "UTF-8";
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+
+
+/************************************************************
+CONTEINER PRINCIPAL (todas as páginas)
+*************************************************************/
+.conteiner{
+
+  position: relative;
+  font-family: "Arial", "Helvetica", sans-serif;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 5px;
+
+}
+
+a{
+  font-family: 'PT Sans', sans-serif;
+}
+
+p{
+  text-align: justify;
+  font-family: 'Lora', serif;
+}
+
+/*FIM (.conteiner)
+-------------------------------------------------------------/
+
+
+/*******************************************************
+CONFIGURAÇÃO dos menus (adequação ao estilo da pseudo hover)
+********************************************************/
+
+[class^="hvr-"] {
+  display: inline-block;
+  /* vertical-align: middle; */
+  margin: 2.5px;
+  padding: 1em;
+  cursor: pointer;
+  background: white;
+  text-decoration: none;
+  /* color: #666; */
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+}
+
+/*Mostra erro*/
+.form-control:invalid {
+  border: 1px solid  #cc0000;
+}
+
+
+
+/**************************************************************
+CABEÇALHO (todas as páginas)
+***************************************************************/
+.conteiner-cabecalho{
+  z-index: 2;
+  top: 0px;
+  width: 100%;
+  display: block;
+  position:fixed;
+  padding: 15px 0;
+  border-bottom: 1px solid silver;
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+  background: white;
+  box-shadow: 3px 3px 20px silver;
+  border-bottom-right-radius: 15px;
+}
+
+.conteiner-cabecalho-center{
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+
+/*H1 DO CABEÇALHO (contem imagem) */
+.conteiner-cabecalho-center h1{
+  padding-left: 10px;
+}
+
+/*MENU de opções (nav)*/
+.menu-opcoes{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  margin-right: 10px;
+}
+
+/*ITENS de LISTA DO MENU*/
+.menu-opcoes ul li{
+  font-size: 15px;
+  display: inline;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+/*ANCORAS DA LISTA*/
+.menu-opcoes a{
+  color: #424242;
+}
+
+/*HOVER DAS ANCORAS*/
+.menu-opcoes a:hover {
+  color: #007dc6;
+}
+
+/*ATIVAÇÃO DAS ANCORAS*/
+.menu-opcoes a:active {
+  color: #007dc6;
+}
+
+/*BOTAO (esconde menu)*/
+.bt-menu-list{
+  display: none;
+}
+
+/*CAMPO BUSCA*/
+.busca{
+  position: absolute;
+  top: 0;
+  right: 0; 
+}
+
+/******************************************************
+ESTILO HOVER MENU (barras right underline)
+*******************************************************/
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: linear-gradient(#090E69 0%,#177DDF 50%,#0A4E98 59%,#0C0967 100%);
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before, 
+.hvr-underline-from-left:focus:before, 
+.hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+
+
+/*FIM (.conteiner-cabecalho)
+-------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/***************************************************************
+RODAPÉ (todas as páginas)
+****************************************************************/
+
+#rodape{
+
+  margin: 10px auto 10px auto;
+  padding: 10px 0;
+  text-align: left;  
+  width: 100%;
+  height: 150px;
+  clear: both;
+  position: relative;
+  background-image: url("../img/fundo-rodape.png");
+  border-bottom-right-radius:15px;
+  border-top-left-radius:15px;
+}
+
+/*IMAGEM do rodapé*/
+#rodape img{
+  margin: 40px auto;
+  vertical-align: middle;
+  width: 94px;
+  display: block;
+}
+
+/*texto (copyright) */
+#rodape span{
+  color: #FCE4EC;
+  font-size: 9pt;
+}
+
+/*Contatos rede social*/
+.social{
+  position: relative;
+  top: 12px;
+  right: 10px;
+}
+
+/*ITENS de LISTA (icones)*/
+.social li{
+  float: left;
+  margin-right: 5px;
+}
+
+/*ANCORAS (icones)*/
+.social li a{
+  height: 32px;
+  width: 32px;
+  display: block;
+}
+
+/*ANCORA com href="fb.com"*/
+.social a[href*="fb.com"]{
+  background-image: url(../img/facebook.png);
+}
+
+/*ANCORA com href="twitter.com"*/
+.social a[href*="twitter.com"]{
+  background-image: url(../img/twitter.png);
+}
+
+/*ANCORA com href="google.com*/
+.social a[href*="google.com"]{
+  background-image: url(../img/googleplus.png);
+}
+
+/***************************************************************
+FIM (rodapé)
+----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/**************************************************************************************************
+
+
+CORPO DAS PÁGINAS
+
+
+**************************************************************************************************/
+
+/*************************************************************************************************
+ESTILO - Padrão todas as páginas
+**************************************************************************************************/
+.topo-corpo{
+  margin: 130px auto 0 auto;
+  position: relative;
+}
+
+
+
+
+
+/*************************************************************************************************
+ESTILO - INDEX.html
+**************************************************************************************************/
+
+
+/**************************************
+aplicação de border-radius (maioria dos elementos)
+***************************************/
+.menu-departamentos,
+.painel-menu-destaque,
+.painel-nvm,
+.novidades,
+.mais-vendidos,
+.novidades a,
+.novidades img,
+.novidades figure,
+.mais-vendidos a,
+.mais-vendidos img,
+.mais-vendidos figure{
+border-top-left-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+
+/**************************************
+FIM (aplicação de border-radius)
+---------------------------------------*/
+
+
+
+/*SECTION DESTAQUE*/
+.painel-menu-destaque{
+  border: 1px solid silver;
+  max-width: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+
+/*MENU DEPARTAMENTOS
+--------------------------------------------------------------------------------------------------*/
+.menu-departamentos{
+  float:left;
+  z-index: 7;
+  width: 29.5%;
+  display: inline-block;
+  color: white;
+  background: linear-gradient(20deg, rgb(3, 2, 21) 35%, rgb(14, 16, 63) 90%, rgb(4, 2, 26) 100%);
+}
+
+/*TÍTULO (section departamentos)*/
+.menu-departamentos h2{
+  text-shadow: 0px 0px 1px #FFF;
+  margin: 10px;
+}
+
+/*ITENS DE LISTA (nav departamentos)*/
+.menu-departamentos li{
+  background-color: white;
+  margin-bottom: 0px;
+  padding-right: 40px;
+}
+
+
+/*ANCORAS (itens de lista - menu departamentos)*/
+.menu-departamentos a{
+  color: #424242;
+  text-decoration: none;
+  width: 100%;
+}
+
+/*FIM (section departametos)
+--------------------------------------------------------------------------------------------------*/
+
+
+
+/*SESSÃO DESTAQUE
+--------------------------------------------------------------------------------------------------*/
+.sessao-destaque{
+
+float: right;
+position: relative;
+width: 70%;
+display: inline-block;
+
+}
+
+/*IMAGEM DESTAQUE*/
+.banner-destaque{
+  width: 100%;
+  border-bottom-right-radius: 15px;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.banner-destaque:active{
+  opacity: 0.5;
+}
+
+
+/*PLAY / PAUSE*/
+.pause,
+.play{
+  position: absolute; 
+  top: 25px;
+  right: 25px;
+  opacity: 1;
+
+}
+
+/*FIM (sessão destaque)
+--------------------------------------------------------------------------------------------------*/
+
+
+
+/*DIV CONTEINER (SECTION (novidades e mais vendidos)
+--------------------------------------------------------------------------------------------------*/
+
+.conteiner-paineis{
+  max-width: 950px;
+  overflow: auto;
+}
+
+.painel-compacto li:nth-child(n+7) {
+  display: none;
+}
+
+.painel-compacto button {
+  display: block;
+}
+
+.bt-mostrar-mais {
+  /* posicionamento */
+  float: right;
+  margin-right: 10px;
+  padding: 10px;
+
+  /* estilo */
+  background-color: #333;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(30,30,30,0.5);
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  text-shadow: 1px 0 1px black;
+
+  /* animação*/
+  transition: 0.3s;
+
+  color: white;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.bt-mostrar-mais:hover {
+  background-color: #393939;
+  box-shadow: 1px 0 20px rgba(200,200,120,0.9);
+}
+
+.bt-mostrar-mais:after {
+  /* elemento vazio */
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+
+  /* triangulo */
+  border-top: 10px solid #333;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+  /* posicionamento */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+
+  /* animação */
+  transition: 0.3s;
+}
+
+.bt-mostrar-mais:hover:after {
+  border-top-color: #393939;
+}
+
+
+/*SECTION (novidades e mais vendidos) */
+.painel-nmv{
+  max-width: 48%;
+  margin: 15px 0;
+  padding-left: 15px;
+  background: linear-gradient(#030317 0%,#10108B 50%,#161091 59%,#000106 100%);
+}
+
+/*TÍTULOS (paineis)*/
+.painel-nmv h2 {
+
+  font-family: 'Bad Script', sans-serif;
+  text-shadow: 1px 1px 1px #FFF;
+  font-size: 24px;
+  margin: 10px;
+  padding-top: 10px;
+  color: #FFFFFF;
+}
+
+/*LISTAS ORDENADAS (paineis)*/
+.painel-nmv ol{
+  width: 95%;
+  margin: 15px 0;
+}
+
+/*ITENS DE LISTA */
+.painel-nmv li{
+  display:inline-block;
+  width: 31%;
+  margin: 0;  
+  padding: 2px;
+  z-index: 1;
+}
+/*HOVER dos ITENS DE LISTA*/
+.painel-nmv li:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/*IMAGENS dos LIs*/
+.painel-nmv img{
+  width: 100%;
+  display: inline-block;
+} 
+
+/*ANCORAS dos LIs*/
+.painel-nmv a {
+  width: 100%;
+  color: #424242;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0;
+}
+
+/*FIGUREs (paineis)*/
+.painel-nmv figure{
+  border: 1px solid white;
+  margin: 1px;
+  padding: 0;
+  background: rgba(0,0,0,0.9);
+  overflow: auto;
+}
+
+/*FIGCAPTIONs (paineis)*/
+.painel-nmv figcaption{
+  width: 90%;
+  margin: 1px auto;
+  padding: 3px 0;
+  color: white;
+}
+
+.bt-mostrar-mais{
+  display: none;
+}
+
+/*SECTION (novidades)*/
+.novidades{
+  float: left;
+  box-shadow: 3px 3px 10px silver;
+}
+
+/*TÍTULO (novidades)*/
+.novidades h2{
+  background-image: url(../img/database.png) no-repeat;
+}
+
+/*SECTION (mais vendidos)*/
+.mais-vendidos{
+  float: right;
+  background-color: #9DD9EA;
+  box-shadow: 3px 3px 10px silver;
+}
+
+/*FIM (div conteiner (section(novidades e mais vendidos))
+----------------------------------------------------------------------------------------------*/
+
+
+
+/****************************************************************************
+ESTILO HOVER (SESSÃO DEPARTAMENTOS)
+*****************************************************************************/
+
+/* Bounce To Right */
+.hvr-bounce-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+
+}
+
+.hvr-bounce-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: linear-gradient(#121488 0%,#2777E2 50%,#4895E8 59%,#091567 100%);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-bounce-to-right:hover, 
+.hvr-bounce-to-right:focus, 
+.hvr-bounce-to-right:active{
+  color: white;
+}
+
+.hvr-bounce-to-right:hover:before, 
+.hvr-bounce-to-right:focus:before, 
+.hvr-bounce-to-right:active:before{
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+
+/*****************************************************************************
+ESTILO HOVER (IMAGEM DESTAQUE)
+*****************************************************************************/
+
+/* Wobble Vertical */
+@-webkit-keyframes hvr-wobble-vertical {
+  16.65% {
+  -webkit-transform: translateY(8px);
+  transform: translateY(8px);
+}
+
+33.3% {
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+49.95% {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}
+
+66.6% {
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+83.25% {
+ -webkit-transform: translateY(1px);
+ transform: translateY(1px);
+}
+
+100% {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+}
+}
+
+@keyframes hvr-wobble-vertical {
+16.65% {
+ -webkit-transform: translateY(8px);
+ transform: translateY(8px);
+}
+
+33.3% {
+ -webkit-transform: translateY(-6px);
+ transform: translateY(-6px);
+}
+
+49.95% {
+ -webkit-transform: translateY(4px);
+ transform: translateY(4px);
+}
+
+66.6% {
+ -webkit-transform: translateY(-2px);
+ transform: translateY(-2px);
+}
+
+83.25% {
+ -webkit-transform: translateY(1px);
+ transform: translateY(1px);
+}
+
+100% {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+}
+}
+
+.hvr-wobble-vertical {
+ display: inline-block;
+ vertical-align: middle;
+ -webkit-transform: translateZ(0);
+ transform: translateZ(0);
+ box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+ -webkit-backface-visibility: hidden;
+ backface-visibility: hidden;
+ -moz-osx-font-smoothing: grayscale;
+
+}
+
+.hvr-wobble-vertical:hover, 
+.hvr-wobble-vertical:focus, 
+.hvr-wobble-vertical:active {
+ -webkit-animation-name: hvr-wobble-vertical;
+ animation-name: hvr-wobble-vertical;
+ -webkit-animation-duration: 1s;
+ animation-duration: 1s;
+ -webkit-animation-timing-function: ease-in-out;
+ animation-timing-function: ease-in-out;
+ -webkit-animation-iteration-count: 1;
+ animation-iteration-count: 1;
+
+}
+
+
+/*****************************************************************************
+EFEITO BUZZ OUT -  ITENS NOVIDADES - MAIS VENDIDOS
+*****************************************************************************/
+
+/* Buzz Out */
+@-webkit-keyframes hvr-buzz-out {
+10% {
+ -webkit-transform: translateX(3px) rotate(2deg);
+ transform: translateX(3px) rotate(2deg);
+}
+
+20% {
+ -webkit-transform: translateX(-3px) rotate(-2deg);
+ transform: translateX(-3px) rotate(-2deg);
+}
+
+30% {
+ -webkit-transform: translateX(3px) rotate(2deg);
+ transform: translateX(3px) rotate(2deg);
+}
+
+40% {
+ -webkit-transform: translateX(-3px) rotate(-2deg);
+ transform: translateX(-3px) rotate(-2deg);
+}
+
+50% {
+ -webkit-transform: translateX(2px) rotate(1deg);
+ transform: translateX(2px) rotate(1deg);
+}
+
+60% {
+ -webkit-transform: translateX(-2px) rotate(-1deg);
+ transform: translateX(-2px) rotate(-1deg);
+}
+
+70% {
+ -webkit-transform: translateX(2px) rotate(1deg);
+ transform: translateX(2px) rotate(1deg);
+}
+
+80% {
+ -webkit-transform: translateX(-2px) rotate(-1deg);
+ transform: translateX(-2px) rotate(-1deg);
+}
+
+90% {
+ -webkit-transform: translateX(1px) rotate(0);
+ transform: translateX(1px) rotate(0);
+}
+
+100% {
+ -webkit-transform: translateX(-1px) rotate(0);
+ transform: translateX(-1px) rotate(0);
+}
+}
+
+@keyframes hvr-buzz-out {
+10% {
+ -webkit-transform: translateX(3px) rotate(2deg);
+ transform: translateX(3px) rotate(2deg);
+}
+
+20% {
+ -webkit-transform: translateX(-3px) rotate(-2deg);
+ transform: translateX(-3px) rotate(-2deg);
+}
+
+30% {
+ -webkit-transform: translateX(3px) rotate(2deg);
+ transform: translateX(3px) rotate(2deg);
+}
+
+40% {
+ -webkit-transform: translateX(-3px) rotate(-2deg);
+ transform: translateX(-3px) rotate(-2deg);
+}
+
+50% {
+ -webkit-transform: translateX(2px) rotate(1deg);
+ transform: translateX(2px) rotate(1deg);
+}
+
+60% {
+ -webkit-transform: translateX(-2px) rotate(-1deg);
+ transform: translateX(-2px) rotate(-1deg);
+}
+
+70% {
+ -webkit-transform: translateX(2px) rotate(1deg);
+ transform: translateX(2px) rotate(1deg);
+}
+
+80% {
+ -webkit-transform: translateX(-2px) rotate(-1deg);
+ transform: translateX(-2px) rotate(-1deg);
+}
+
+90% {
+ -webkit-transform: translateX(1px) rotate(0);
+ transform: translateX(1px) rotate(0);
+}
+
+100% {
+ -webkit-transform: translateX(-1px) rotate(0);
+ transform: translateX(-1px) rotate(0);
+}
+}
+
+.hvr-buzz-out {
+ display: inline-block;
+ vertical-align: middle;
+ -webkit-transform: translateZ(0);
+ transform: translateZ(0);
+ box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+ -webkit-backface-visibility: hidden;
+ backface-visibility: hidden;
+ -moz-osx-font-smoothing: grayscale;
+}
+.hvr-buzz-out:hover, 
+.hvr-buzz-out:focus, 
+.hvr-buzz-out:active {
+ -webkit-animation-name: hvr-buzz-out;
+ animation-name: hvr-buzz-out;
+ -webkit-animation-duration: 0.75s;
+ animation-duration: 0.75s;
+ -webkit-animation-timing-function: linear;
+ animation-timing-function: linear;
+ -webkit-animation-iteration-count: 1;
+ animation-iteration-count: 1;
+}
+
+/*************************************************************************************************
+FIM (ESTILO - INDEX.html)
+------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*************************************************************************************************
+
+ESTILO - PRODUTOS.html
+
+**************************************************************************************************/
+
+.cores{
+ position: relative;
+ padding-top: 70px;
+ margin: 30px;
+}
+
+.cores h1{
+ margin:20px;
+}
+
+.cores label:after {
+ border: 6px solid rgba(0,0,0,0);
+ transition: 1s;
+}
+
+.cores label:hover:after{
+ border: 6px solid rgba(0,0,0,0.1);
+}
+
+.cores label img{
+ display: block;
+ max-width: 100%;
+}
+
+.cores label:after {
+ content: '';  
+ display: block;
+ box-sizing: border-box;
+ border-radius: 50%;
+ width: 50px;
+ height: 50px;
+ position:absolute;
+ top:30px;
+}
+
+.cores label[for='1']:after {
+ background-color: #33CC66;
+ margin:auto;
+ left:5px;
+}
+
+.cores label[for='2']:after {
+ background-color: #FF6666;
+ margin:auto;
+ left:65px;
+}
+
+.cores label[for='3']:after {
+ background-color: #6666FF;
+ margin:auto;
+ left:130px;
+}
+
+.cores input:checked + label:after {
+ border: 6px solid rgba(0,0,0,0.3);
+}
+
+.cores input[type=radio]{
+display: none;
+}
+
+.cores input:not(:checked) + label img {
+display: none;
+}
+
+.produto {
+color: #333;
+line-height: 1.3;
+margin-top: 2em;
+width:65%;
+}
+
+.produto h1 {
+font-family: 'Simonetta', cursive;
+font-size: 1.8em;
+font-weight: bold;
+}
+
+.produto p {
+font-size: 1.2em;
+font-style: italic;
+margin-bottom: 1em;
+}
+
+.produto legend {
+display: block;
+font: bold 0.9em/2.5 Arial;
+text-transform: uppercase;
+}
+
+.comprar {
+background: #91bd3c;
+border: none;
+color: #333333;
+
+font-size: 1.4em;
+text-transform: uppercase;
+
+box-shadow: 0 1px 3px #777;
+
+display: block;
+padding: 0.5em 1em;
+
+position: absolute;
+top:23%;
+right:25%;
+
+}
+
+.produto-back {
+ overflow: auto;
+ position: relative;
+ background-color: #F2F2F2;
+ margin-top: 1em;
+ border: 2px solid #cccccc;
+ border-top-left-radius: 16px;
+ border-bottom-right-radius: 15px;
+ width: 100%;
+}
+
+.cores label img {
+ border: 2px solid #cccccc;
+}
+
+.detalhes{
+ width:40%;
+ position:absolute;
+ top:40%;
+ right:3%;
+ text-align: justify;
+}
+
+.titulo-produto{
+ width:35%;
+ position:absolute;
+ top:4.5%;
+ right:7%;
+}
+
+.tamanhos{
+ position:absolute;
+ top:5.3%;
+ right:50%;
+}
+
+.tamanhos output{
+ display: inline-block;
+ height: 44px;
+ width: 44px;
+
+ line-height: 44px;
+ text-align: center;
+
+ border: 3px solid #666;
+ border-radius: 50%;
+ color: #333;
+}
+
+table {
+ border-spacing: 0.2em;
+ border-collapse: separate;
+ padding-bottom: 15px;
+}
+
+thead {
+ background-color: #999;
+}
+thead th {
+ font-weight: bold;
+ padding: 0.5em 3em;
+ text-align: center;
+}
+td {
+ width: 10%;
+ padding: 0.3em;
+}
+tr:nth-child(2n) {
+ background-color: #ccc;
+}
+td:first-child {
+ font-style: italic;
+}
+
+}
+
+/*************************************************************************************************
+FIM (ESTILO - PRODUTOS.html)
+------------------------------------------------------------------------------------------------*/
+
+
+/*************************************************************************************************
+
+ESTILO - SOBRE.html
+
+**************************************************************************************************/
+
+
+/*ARTIGO */
+.artigo{
+
+ font-size: 12pt;
+ margin-top:135px;
+ font-family: 'Lato', sans-serif;
+ font-variant: small-caps;
+ color:#000;
+ background-color:none;
+ text-align:justify;
+ word-spacing:1px; /* tamanho do espaço entre cada palavra */
+ text-indent:30px; /* tamanho da margem da primeira linha do texto */  
+}
+
+/*TÍTULO*/
+h1#titulo-principal{
+
+ font-family: serif;
+ background-image: url(../img/sobre-background.jpg);
+ padding: 10px;
+ margin-bottom: 10px;
+ border-top-left-radius: 10px;
+
+}
+
+/*PRIMEIRA LETRA DO PARÁGRAFO*/
+h1+p:first-letter {
+ font-size: 200%;
+}
+
+/*TÍTULOS (história e Diferenciais)*/
+h2#historia,
+h2#diferenciais{
+ font-size: 14pt;
+ font-family: FonteTitulo, sans-serif; /* definição de fonte */
+ border-bottom: 1px solid silver;
+ margin-top: 30px;
+ margin-bottom: 20px;
+}
+
+.midia-sobre-mf{
+
+ display: inline-block;
+ width: 47%;
+ vertical-align: center;
+ margin: 5px;
+}
+
+.servs-web{
+ display: block;
+ width: 98%;
+ height: 47%;
+ margin: 15px auto;
+ text-align: center;
+}
+
+/*FUGURE'S (centro de distribuição e familia)*/
+figure#centro-distribuicao,
+figure#familia-pelho{
+ background-color: #F2EDED;
+ box-shadow: 3px 3px 10px silver;
+ border-top-left-radius: 15px;
+ border-bottom-right-radius: 15px;
+}
+
+/*FUGURE (centro de distribuição)*/
+#centro-distribuicao{
+ overflow: auto;
+ width: 60%;
+ margin:2em auto;
+
+}
+/*IMAGEM (centro de distribuição)*/
+#centro-distribuicao img{
+ width: 96%;
+ margin: 10px;
+ text-align: center;
+}
+
+/*FIGURE (familia)*/
+#familia-pelho{
+ padding: 15px 20px 0px 0;
+ margin-top: 0;
+ margin: 0 0 10px 15px;
+ float: right;
+ width: 25%;
+}
+
+/*IMAGEM (familia)*/
+#familia-pelho img{
+ border-box: 0;
+ width: 95%;
+ margin: 15px;
+}
+
+/*FIGCAPTION (centro de distribuição e familia)*/
+#centro-distribuicao figcaption,
+#familia-pelho figcaption{
+
+ font-size: 11px;
+ font-style: italic;
+ margin: 5px;
+ padding-bottom: 5px;
+ text-align: center;
+
+}
+
+
+/*************************************************************************************************
+FIM (SOBRE.html)
+--------------------------------------------------------------------------------------------------/
+
+
+
+
+/*RESPONSIVIDADE - DESKTOP / TABLET */
+@media screen and (max-width: 939px){
+
+/************************************
+GERAL (todas as paginas)
+************************************/
+.topo-corpo{
+ margin: 200px auto 0 auto;
+}
+
+
+/*CABEÇALHO & RODAPÉ
+-----------------------------------------------------*/
+.conteiner-cabecalho{
+ width: 99%;
+}
+
+/*H1 do cabeçalho*/
+.conteiner-cabecalho h1{ 
+ width: 100%;
+ text-align: center;
+ padding: 0;
+ margin: 0;
+ position: static;
+}
+
+/*IMAGEM do cabeçalho*/
+.conteiner-cabecalho img{
+ max-width: 50%;
+}
+
+/*MENU*/
+.menu-opcoes{
+ position: static;
+ bottom: 10px;
+ right: 0;
+ margin-right: 10px;
+ text-align: center;
+}
+
+/*FIM (cabeçalho)
+-----------------------------------------------------*/
+
+
+/*RODAPE
+------------------------------------------------------*/
+#rodape{
+ width: 99%;
+}
+
+/*FIM (cabeçalho e rodapé)
+------------------------------------------------------*/
+
+
+
+
+/*************************************
+INDEX.php
+*************************************/
+
+.painel-nmv{
+ max-width: 100%;
+}
+
+.painel-nmv ol{
+ width: 100%;
+ margin: 20px auto;
+}
+
+.painel-nmv li{
+ width: 28.5%;
+ margin: 3px;
+}
+
+.painel-nmv img{
+  width: 100%;
+}
+
+/*FIM - INDEX.php
+------------------------------------------*/
+
+
+
+/*************************************
+PRODUTO.php
+*************************************/
+.fb-like{
+ top: 20px;
+}
+
+.twitter-share-button{
+ top: 40px;
+}
+
+.cores{
+ width: 80%;
+ text-align: left;
+ margin: auto;
+}
+
+.produto{
+ text-align: left;
+ margin: auto;
+ text-align: center;
+}
+
+.produto h1{
+ padding-top:20px;
+}
+
+.titulo-produto{
+ margin:auto;
+}
+
+.produto-back {
+ position: relative;
+ background-color: #F2F2F2;
+ margin-top: 1em;
+ border-top: 2px solid #ccc;
+ width:100%;
+}
+
+.comprar{
+ position: static;
+ margin:20px auto;
+}
+
+.detalhes{
+ width: 90%;
+ position: static;
+ text-align: justify;
+ margin: auto;
+}
+
+.titulo-produto{
+ width: 100%;
+ position: static;
+
+}
+
+.tamanhos{
+ width: 100%;
+ position: static;
+}
+
+/*************************************
+SOBRE.php
+**************************************/
+
+.midia-sobre-mf{
+ display: block;
+ width: 95%;
+ height: 40%;
+ vertical-align: center;
+ margin: 5px;
+}
+
+}
+
+
+/*FIM (sobre.php)
+-------------------------------------*/
+
+
+/*RESPONSIVIDADE - NETBOOK / TABLET*/
+@media screen and (max-width:850px){
+
+
+/*************************************
+INDEX.html
+**************************************/
+
+/*diminuição do border rádius */
+.painel-menu-destaque,
+.banner-destaque,
+.menu-departamentos,
+.painel-nvm,
+.novidades,
+.mais-vendidos,
+.novidades a,
+.novidades img,
+.novidades figure,
+.mais-vendidos a,
+.mais-vendidos img,
+.mais-vendidos figure{
+
+ border-top-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+}
+
+/*SESSÃO DO MENU*/
+.menu-departamentos{
+ z-index: 2;
+ width: 100%;
+ display: block;
+ margin-top: 5px;
+}
+
+/*SESSÃO DE DESTAQUE*/
+.sessao-destaque{
+ position: relative;
+ width: 100%;
+ display: block;
+}
+
+/*FIM (index.html)
+-------------------------------------*/
+
+
+
+/*************************************
+SOBRE.html
+*************************************/
+#centro-distribuicao,
+#familia-pelho{
+ max-width: 340px;
+}
+
+#centro-distribuicao{
+ width: 95%;
+ padding: 10px;
+}
+
+/*FIM (sobre.html)
+-------------------------------------*/
+}
+
+
+/*RESPONSIVIDADE - TABLET / SMARTPHONE*/
+@media screen and (max-width:647px){
+
+/************************************
+GERAL (todas as paginas)
+************************************/
+.topo-corpo{
+ margin: 250px auto 0 auto;
+}
+
+
+
+/*************************************
+SOBRE.html
+*************************************/
+.artigo{
+ font-size: 9pt;
+}
+
+/*FIM (sobre.html)
+-------------------------------------*/
+
+}
+
+
+/*RESPONSIVIDADE - SMARTPHONE / CELULAR WAP*/
+@media screen and (max-width: 320px){
+
+/************************************
+GERAL (todas as paginas)
+************************************/
+.topo-corpo{
+ margin: 270px auto 0 auto;
+}
+
+#rodape span{
+ display: none;
+}
+
+/***********************************
+Index.html
+************************************/
+
+/*ITENS DE LISTA */
+.painel-nmv li{
+ width: 26%;
+}
+
+}
