@@ -125,5 +125,5 @@
 	<script src="js/funcoes.js"></script>
 	<script src="js/bootstrap.js"></script>
 	
-	<!-- RODAPÉ -->
+	 <!-- RODAPÉ -->
 <?php include("rodape.php"); ?>
