@@ -26,7 +26,7 @@
 			<h2>Departamentos</h2>
 			<nav>
 				<ul>
-					<li><a href="#" class="hvr-bounce-to-right">Blusas e camisas</a></li>
+					<li><a href="#" class="hvr-bounce-to-right">Blusas e Camisas</a></li>
 					<li><a href="#" class="hvr-bounce-to-right">Calças</a></li>
 					<li><a href="#" class="hvr-bounce-to-right">Saias</a></li>
 					<li><a href="#" class="hvr-bounce-to-right">Vestidos</a></li>
